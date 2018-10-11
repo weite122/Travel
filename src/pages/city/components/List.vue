@@ -1,42 +1,118 @@
 <template>
-  <div class="list">
-    <div class="area">
-      <div class="title border-topbottom">当前城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">
-            北京
+  <div class="list" ref="wrapper">
+    <div>
+      <div class="area">
+        <div class="title border-topbottom">当前城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">
+              北京
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">热门城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">
-            北京
+      <div class="area">
+        <div class="title border-topbottom">热门城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">
+              北京
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="area border-topbottom">
-      <div class="title">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">AAAA</div>
-        <div class="item border-bottom">AAAA</div>
-        <div class="item border-bottom">AAAA</div>
-        <div class="item border-bottom">AAAA</div>
-        <div class="item border-bottom">AAAA</div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
+      </div>
+      <div class="area border-topbottom">
+        <div class="title">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+          <div class="item border-bottom">AAAA</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "CityList"
+  import Bscroll from 'better-scroll'
+  export default {
+    name: "CityList",
+    mounted () {
+      this.scroll = new Bscroll(this.$refs.wrapper)
     }
+  }
 </script>
 
 <style lang="stylus" scoped>
@@ -57,7 +133,7 @@
     right: 0
     bottom: 0
     .title
-      line-height: .44rem
+      line-height: .54rem
       background: #eee
       padding-left: .2rem
       color: #666
